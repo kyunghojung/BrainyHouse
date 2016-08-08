@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Security"
+        android:id="@+id/titleTextSecurity"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connection"
+        android:id="@+id/textViewDeviceSecurity"
+        android:layout_below="@+id/titleTextSecurity"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textViewDeviceStatusSecurity"
+        android:layout_alignBottom="@+id/textViewDeviceSecurity"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/titleTextSecurity"
+        android:layout_toEndOf="@+id/textViewDeviceSecurity"
+        android:layout_marginLeft="10dp"
+        android:textSize="12dp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PIR"
+        android:id="@+id/textViewPIR"
+        android:layout_alignEnd="@+id/textViewDeviceSecurity"
+        android:layout_below="@+id/textViewDeviceSecurity"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textViewPIRStatus"
+        android:layout_alignBottom="@+id/textViewPIR"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textViewDeviceStatusSecurity"
+        android:layout_toEndOf="@+id/textViewPIR"
+        android:layout_marginLeft="10dp"  />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Door"
+        android:id="@+id/textViewDoor"
+        android:layout_alignEnd="@+id/textViewPIR"
+        android:layout_below="@+id/textViewPIR"
+        android:layout_alignBottom="@+id/buttonDoor"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textViewDoorStatus"
+        android:layout_alignBottom="@+id/buttonDoor"
+        android:layout_below="@+id/textViewPIRStatus"
+        android:layout_alignStart="@+id/textViewPIRStatus"
+        android:layout_toStartOf="@+id/buttonDoor"
+        android:gravity="center_vertical" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="OPEN"
+        android:id="@+id/buttonDoor"
+        android:textSize="13dp"
+        android:layout_below="@+id/textViewPIRStatus"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:id="@+id/textViewCamera"
+        android:layout_alignEnd="@+id/textViewDoor"
+        android:layout_below="@+id/textViewDoor"
+        android:layout_alignBottom="@+id/buttonCamera"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"  />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="0"
+        android:id="@+id/textViewCameraStatus"
+        android:layout_alignBottom="@+id/buttonCamera"
+        android:layout_below="@+id/textViewDoor"
+        android:layout_alignStart="@+id/textViewDoorStatus"
+        android:layout_toStartOf="@+id/buttonCamera"
+        android:gravity="center_vertical" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="ON"
+        android:id="@+id/buttonCamera"
+        android:textSize="13dp"
+        android:layout_below="@+id/buttonDoor"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RF"
+        android:id="@+id/textViewSecurityRF"
+        android:layout_alignEnd="@+id/textViewCamera"
+        android:layout_below="@+id/textViewCamera"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"  />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="null"
+        android:id="@+id/textViewSecurityRFValue"
+        android:layout_toEndOf="@+id/textViewSecurityRF"
+        android:layout_alignEnd="@+id/buttonCamera"
+        android:layout_below="@+id/textViewCameraStatus"
+        android:layout_alignBottom="@+id/textViewSecurityRF"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp" />
+
+    <ListView
+        android:id="@+id/listBrainy1Message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewSecurityRF">
+    </ListView>
+</RelativeLayout>

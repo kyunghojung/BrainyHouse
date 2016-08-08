@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="343dp"
+    android:layout_height="250dp"
+    android:background="@drawable/popup_loading_bg"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/fridge_item_add"
+        android:id="@+id/textView_fridge_setting_item_add_title"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#4f6228"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_name"
+        android:id="@+id/textView_fridge_setting_item_add_name"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_fridge_setting_item_add_title"
+        android:layout_alignBottom="@+id/editText_fridge_setting_item_add_name"
+        android:layout_toStartOf="@+id/editText_fridge_setting_item_add_shelf_life_value"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="#4f6228" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/editText_fridge_setting_item_add_name"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView_fridge_setting_item_add_title"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:layout_toEndOf="@+id/textView_fridge_setting_item_add_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shelf_life"
+        android:id="@+id/textview_fridge_setting_item_add_shelf_life"
+        android:layout_below="@+id/textView_fridge_setting_item_add_name"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/editText_fridge_setting_item_add_shelf_life_value"
+        android:textSize="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="#4f6228"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:id="@+id/editText_fridge_setting_item_add_shelf_life_value"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editText_fridge_setting_item_add_name"
+        android:layout_toEndOf="@+id/textview_fridge_setting_item_add_rfid"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:inputType="date"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_rfid"
+        android:id="@+id/textview_fridge_setting_item_add_rfid"
+        android:layout_below="@+id/textview_fridge_setting_item_add_shelf_life"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="#4f6228"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@+id/linearLayoutSecuritySettingButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/textview_fridge_setting_item_add_rfid_value"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editText_fridge_setting_item_add_shelf_life_value"
+        android:layout_toEndOf="@+id/textview_fridge_setting_item_add_rfid"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:gravity="center_vertical"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutSecuritySettingButton"
+        android:layout_below="@+id/textview_fridge_setting_item_add_rfid_value"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_fridge_setting_item_add_confirm"
+            android:layout_weight="1"
+            android:text="@string/popup_add"
+            android:textSize="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="#4f6228"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_fridge_setting_item_add_cancel"
+            android:layout_weight="1"
+            android:text="@string/popup_cancel"
+            android:textSize="20dp"
+            android:gravity="center_vertical|center_horizontal|clip_vertical"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="#4f6228"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>

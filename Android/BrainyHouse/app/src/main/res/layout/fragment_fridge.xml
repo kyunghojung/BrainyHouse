@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="FRIDGE"
+        android:id="@+id/titleTextFridge"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connection"
+        android:id="@+id/textViewDeviceFridge"
+        android:layout_below="@+id/titleTextFridge"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textViewDeviceStatusFridge"
+        android:layout_alignBottom="@+id/textViewDeviceFridge"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/titleTextFridge"
+        android:layout_toEndOf="@+id/textViewDeviceFridge"
+        android:layout_marginLeft="10dp"
+        android:textSize="12dp"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RF"
+        android:id="@+id/textViewFridgeRF"
+        android:layout_alignEnd="@+id/textViewDeviceFridge"
+        android:layout_below="@+id/textViewDeviceFridge"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="null"
+        android:id="@+id/textViewFridgeRFValue"
+        android:layout_alignBottom="@+id/textViewFridgeRF"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textViewDeviceStatusFridge"
+        android:layout_toEndOf="@+id/textViewFridgeRF"
+        android:layout_marginLeft="10dp" />
+
+    <ListView
+        android:id="@+id/listFridgeItems"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewFridgeRF">
+    </ListView>
+
+    <ListView
+        android:id="@+id/listFridgeMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/listFridgeItems">
+    </ListView>
+</RelativeLayout>

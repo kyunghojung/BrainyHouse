@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light"
+        android:id="@+id/button_Light"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AirCon"
+        android:id="@+id/button_AirCon"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/button_Light" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Door Lock"
+        android:id="@+id/button_Door"
+        android:layout_below="@+id/button_Light"
+        android:layout_toStartOf="@+id/button_AirCon" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Curtain"
+        android:id="@+id/button_Curtain"
+        android:layout_alignTop="@+id/button_Door"
+        android:layout_alignEnd="@+id/button_AirCon" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gas"
+        android:id="@+id/button_Gas"
+        android:layout_below="@+id/button_Door"
+        android:layout_toStartOf="@+id/button_Curtain" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CCTV"
+        android:id="@+id/button_CCTV"
+        android:layout_alignBottom="@+id/button_Gas"
+        android:layout_alignEnd="@+id/button_Curtain" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fridge"
+        android:id="@+id/button_Fridge"
+        android:layout_below="@+id/button_Gas"
+        android:layout_toStartOf="@+id/button_CCTV" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Security"
+        android:id="@+id/button_Security"
+        android:layout_alignBottom="@+id/button_Fridge"
+        android:layout_alignEnd="@+id/button_CCTV" />
+
+</RelativeLayout>

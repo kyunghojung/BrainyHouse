@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Fridge Setting"
+        android:id="@+id/titleTextFrdigeSetting"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/textViewFrdigeSettingItemName"
+        android:layout_below="@+id/titleTextFrdigeSetting"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/editTextFridgeSettingItemName"
+        android:textSize="20dp"
+        android:gravity="center_vertical" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/editTextFridgeSettingItemName"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/titleTextFrdigeSetting"
+        android:layout_toEndOf="@+id/textViewFrdigeSettingItemName"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RFID"
+        android:id="@+id/textViewFrdigeSettingRFID"
+        android:layout_alignEnd="@+id/textViewFrdigeSettingItemName"
+        android:layout_below="@+id/textViewFrdigeSettingItemName"
+        android:layout_alignBottom="@+id/textViewFrdigeSettingRFIDValue"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/textViewFrdigeSettingRFIDValue"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editTextFridgeSettingItemName"
+        android:layout_toEndOf="@+id/textViewFrdigeSettingRFID"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutSecuritySettingButton"
+        android:layout_below="@+id/textViewFrdigeSettingRFIDValue"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add"
+            android:id="@+id/buttonOK"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:id="@+id/buttonCancel" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewFridgeSettingItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayoutSecuritySettingButton">
+    </ListView>
+</RelativeLayout>

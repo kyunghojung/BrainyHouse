@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"  >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_aircon_control_title"
+                android:src="@drawable/aircon_control_title"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_airconditioning"
+                android:src="@drawable/airconditioning_off"
+                android:layout_marginTop="24dp"
+                android:layout_below="@+id/imageView_aircon_control_title"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_aircon_control_manual_title"
+                android:src="@drawable/aircon_control_manual_title"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LinearLayout_switch"
+                android:layout_below="@+id/imageView_aircon_control_manual_title"
+                android:layout_alignStart="@+id/imageView_aircon_control_manual_title"
+                android:gravity="center|center_vertical|center_horizontal"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OFF"
+                    android:id="@+id/textView_switch_off"
+                    android:textColor="#ff0000"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center|center_vertical|center_horizontal"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView_aircon_control_button"
+                    android:src="@drawable/switch_horizontal_close"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ON"
+                    android:id="@+id/textView_switch_on"
+                    android:textColor="#00FF00"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center|center_vertical|center_horizontal"
+                    android:layout_alignBottom="@+id/imageView_aircon_control_button"
+                    android:layout_alignParentEnd="true" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageViewaircon_control_auto_title"
+                android:layout_below="@+id/LinearLayout_switch"
+                android:layout_alignEnd="@+id/LinearLayout_switch"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/aircon_control_auto_title" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/LinearLayout_current_temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewaircon_control_auto_title"
+                android:layout_alignStart="@+id/imageViewaircon_control_auto_title"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aircon_setting_current_temp_title" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:id="@+id/textView_current_temp"
+                    android:background="@drawable/border"
+                    android:gravity="center_vertical"
+                    android:textSize="20dp"
+                    android:textColor="#00FF00"
+                    android:paddingLeft="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/LinearLayout_setting_temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LinearLayout_current_temp"
+                android:layout_alignStart="@+id/LinearLayout_current_temp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView2"
+                    android:src="@drawable/aircon_setting_temp_title" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:id="@+id/textView_setting_temp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/border"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#FF0000"
+                        android:textSize="20dp"
+                        android:paddingLeft="5dp"
+                        android:layout_toStartOf="@+id/imageView_aircon_setting_up" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_aircon_setting_up"
+                        android:src="@drawable/aircon_setting_up"
+                        android:layout_above="@+id/imageView_aircon_setting_down"
+                        android:layout_alignParentEnd="true" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView_aircon_setting_down"
+                        android:src="@drawable/aircon_setting_down"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

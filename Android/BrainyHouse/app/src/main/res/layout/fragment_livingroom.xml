@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="LIVING ROOM"
+        android:id="@+id/titleTextLivingRoom"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connection"
+        android:id="@+id/textViewDeviceLivingRoom"
+        android:layout_below="@+id/titleTextLivingRoom"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textViewDeviceStatusLivingRoom"
+        android:layout_alignBottom="@+id/textViewDeviceLivingRoom"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/titleTextLivingRoom"
+        android:layout_toEndOf="@+id/textViewDeviceLivingRoom"
+        android:layout_marginLeft="10dp"
+        android:textSize="12dp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LUX"
+        android:id="@+id/textViewLux"
+        android:layout_alignEnd="@+id/textViewDeviceLivingRoom"
+        android:layout_below="@+id/textViewDeviceLivingRoom"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textViewLuxValue"
+        android:layout_alignBottom="@+id/textViewLux"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textViewDeviceStatusLivingRoom"
+        android:layout_toEndOf="@+id/textViewLux"
+        android:layout_marginLeft="10dp"  />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEMP"
+        android:id="@+id/textViewTemp"
+        android:layout_alignEnd="@+id/textViewLux"
+        android:layout_below="@+id/textViewLux"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textViewTempValue"
+        android:layout_alignBottom="@+id/textViewTemp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textViewLuxValue"
+        android:layout_toEndOf="@+id/textViewTemp"
+        android:layout_marginLeft="10dp"  />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humi"
+        android:id="@+id/textViewHumi"
+        android:layout_alignEnd="@+id/textViewTemp"
+        android:layout_below="@+id/textViewTemp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textViewHumiValue"
+        android:layout_alignBottom="@+id/textViewHumi"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textViewTempValue"
+        android:layout_toEndOf="@+id/textViewHumi"
+        android:layout_marginLeft="10dp"  />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LED"
+        android:id="@+id/textViewLED"
+        android:layout_alignEnd="@+id/textViewHumi"
+        android:layout_below="@+id/textViewHumi"
+        android:layout_alignBottom="@+id/buttonLED"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textViewLEDStatus"
+        android:layout_alignBottom="@+id/buttonLED"
+        android:layout_below="@+id/textViewHumiValue"
+        android:layout_alignStart="@+id/textViewHumiValue"
+        android:layout_toStartOf="@+id/buttonLED"
+        android:gravity="center_vertical" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="ON"
+        android:id="@+id/buttonLED"
+        android:textSize="13dp"
+        android:layout_below="@+id/textViewHumiValue"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="RED LED"
+        android:id="@+id/textViewRedLED"
+        android:layout_alignEnd="@+id/textViewLED"
+        android:layout_below="@+id/textViewLED"
+        android:layout_alignBottom="@+id/buttonRedLED"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="0"
+        android:id="@+id/textViewRedLEDStatus"
+        android:layout_alignBottom="@+id/buttonRedLED"
+        android:layout_below="@+id/textViewLEDStatus"
+        android:layout_alignStart="@+id/textViewLEDStatus"
+        android:layout_toStartOf="@+id/buttonLED"
+        android:gravity="center_vertical" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="ON"
+        android:id="@+id/buttonRedLED"
+        android:textSize="13dp"
+        android:layout_below="@+id/buttonLED"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Curtain"
+        android:id="@+id/textViewCurtain"
+        android:layout_alignEnd="@+id/textViewRedLED"
+        android:layout_below="@+id/textViewRedLED"
+        android:layout_alignBottom="@+id/buttonCurtain"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"  />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="0"
+        android:id="@+id/textViewCurtainStatus"
+        android:layout_alignBottom="@+id/buttonCurtain"
+        android:layout_below="@+id/textViewRedLED"
+        android:layout_alignStart="@+id/textViewRedLEDStatus"
+        android:layout_toStartOf="@+id/buttonCurtain"
+        android:gravity="center_vertical" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="OPEN"
+        android:id="@+id/buttonCurtain"
+        android:textSize="13dp"
+        android:layout_below="@+id/buttonRedLED"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Fan"
+        android:id="@+id/textViewFan"
+        android:layout_alignEnd="@+id/textViewCurtain"
+        android:layout_below="@+id/textViewCurtain"
+        android:layout_alignBottom="@+id/buttonFan"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="0"
+        android:id="@+id/textViewFanStatus"
+        android:layout_alignBottom="@+id/buttonFan"
+        android:layout_below="@+id/textViewCurtain"
+        android:layout_alignStart="@+id/textViewCurtainStatus"
+        android:layout_toStartOf="@+id/buttonFan"
+        android:gravity="center_vertical"  />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="ON"
+        android:id="@+id/buttonFan"
+        android:textSize="13dp"
+        android:layout_below="@+id/buttonCurtain"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

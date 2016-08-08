@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="KITCHEN"
+        android:id="@+id/titleTextKitchen"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connection"
+        android:id="@+id/textViewDeviceKitchen"
+        android:layout_below="@+id/titleTextKitchen"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textViewDeviceStatusKitchen"
+        android:layout_alignBottom="@+id/textViewDeviceKitchen"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/titleTextKitchen"
+        android:layout_toEndOf="@+id/textViewDeviceKitchen"
+        android:layout_marginLeft="10dp"
+        android:textSize="12dp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GAS"
+        android:id="@+id/textViewTemp"
+        android:layout_alignEnd="@+id/textViewDeviceKitchen"
+        android:layout_below="@+id/textViewDeviceKitchen"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textViewTempValue"
+        android:layout_alignBottom="@+id/textViewTemp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textViewDeviceStatusKitchen"
+        android:layout_toEndOf="@+id/textViewTemp"
+        android:layout_marginLeft="10dp"  />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RED LED"
+        android:id="@+id/textViewRedLED"
+        android:layout_alignEnd="@+id/textViewTemp"
+        android:layout_below="@+id/textViewTemp"
+        android:layout_alignBottom="@+id/buttonRedLED"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textViewRedLEDStatus"
+        android:layout_alignBottom="@+id/buttonRedLED"
+        android:layout_below="@+id/textViewTempValue"
+        android:layout_alignStart="@+id/textViewTempValue"
+        android:layout_toStartOf="@+id/buttonRedLED"
+        android:gravity="center_vertical" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="ON"
+        android:id="@+id/buttonRedLED"
+        android:textSize="13dp"
+        android:layout_below="@+id/textViewTempValue"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GAS Valve"
+        android:id="@+id/textViewGasValve"
+        android:layout_alignEnd="@+id/textViewRedLED"
+        android:layout_below="@+id/textViewRedLED"
+        android:layout_alignBottom="@+id/buttonGasValve"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"  />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="0"
+        android:id="@+id/textViewGasValveStatus"
+        android:layout_alignBottom="@+id/buttonGasValve"
+        android:layout_below="@+id/textViewRedLED"
+        android:layout_alignStart="@+id/textViewRedLEDStatus"
+        android:layout_toStartOf="@+id/buttonGasValve"
+        android:gravity="center_vertical" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="OPEN"
+        android:id="@+id/buttonGasValve"
+        android:textSize="13dp"
+        android:layout_below="@+id/buttonRedLED"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buzzer"
+        android:id="@+id/textViewBuzzer"
+        android:layout_alignEnd="@+id/textViewGasValve"
+        android:layout_below="@+id/textViewGasValve"
+        android:layout_alignBottom="@+id/buttonBuzzer"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"  />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="0"
+        android:id="@+id/textViewBuzzerStatus"
+        android:layout_alignBottom="@+id/buttonBuzzer"
+        android:layout_below="@+id/textViewGasValve"
+        android:layout_alignStart="@+id/textViewGasValveStatus"
+        android:layout_toStartOf="@+id/buttonGasValve"
+        android:gravity="center_vertical" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="ON"
+        android:id="@+id/buttonBuzzer"
+        android:textSize="13dp"
+        android:layout_below="@+id/buttonGasValve"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

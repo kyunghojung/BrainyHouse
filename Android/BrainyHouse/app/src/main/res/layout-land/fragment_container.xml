@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboardLayout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/livingroomFragment"
+        android:name="com.ents.brainyhouse.ui.LivingRoomFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_room" />
+
+    <fragment
+        android:id="@+id/kitchenFragment"
+        android:name="com.ents.brainyhouse.ui.KitchenFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_room" />
+
+    <fragment
+        android:id="@+id/securityFragment"
+        android:name="com.ents.brainyhouse.ui.SecurityFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_room" />
+
+    <fragment
+        android:id="@+id/fridgeFragment"
+        android:name="com.ents.brainyhouse.ui.FridgeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_room" />
+</LinearLayout>

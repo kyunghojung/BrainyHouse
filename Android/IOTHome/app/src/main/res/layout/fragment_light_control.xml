@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_light_control_title"
+        android:src="@drawable/light_control_title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_light_control_main"
+        android:src="@drawable/light_off_main"
+        android:layout_below="@+id/imageView_light_control_title"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_light_control_button"
+        android:src="@drawable/switch_horizontal_close"
+        android:layout_below="@+id/imageView_light_control_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFF"
+        android:id="@+id/textView_switch_off"
+        android:textColor="#ff0000"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:layout_alignBottom="@+id/imageView_light_control_button"
+        android:layout_toStartOf="@+id/imageView_light_control_button"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON"
+        android:id="@+id/textView_switch_on"
+        android:textColor="#00FF00"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:layout_alignBottom="@+id/imageView_light_control_button"
+        android:layout_toEndOf="@+id/imageView_light_control_button"
+        android:layout_marginStart="10dp" />
+
+</RelativeLayout>

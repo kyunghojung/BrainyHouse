@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#def5bd">
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_title"
+            android:src="@drawable/title_bar"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_button_setting"
+            android:src="@drawable/menu_button_setting"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menubar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlebar"
+        android:layout_above="@+id/bottom_bar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_light"
+            android:src="@drawable/menu_light_off"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_aircon"
+            android:src="@drawable/menu_aircon_off"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView_light" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_doorlock"
+            android:src="@drawable/menu_doorlock_off"
+            android:layout_below="@+id/imageView_light"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_curtain"
+            android:src="@drawable/menu_curtain_off"
+            android:layout_below="@+id/imageView_aircon"
+            android:layout_toEndOf="@+id/imageView_doorlock" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_gas"
+            android:src="@drawable/menu_gas_off"
+            android:layout_below="@+id/imageView_doorlock"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_cctv"
+            android:src="@drawable/menu_cctv_off"
+            android:layout_below="@+id/imageView_curtain"
+            android:layout_toEndOf="@+id/imageView_gas" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_fridge"
+            android:src="@drawable/menu_fridge_off"
+            android:layout_below="@+id/imageView_gas"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_security"
+            android:src="@drawable/menu_security_off"
+            android:layout_below="@+id/imageView_cctv"
+            android:layout_toEndOf="@+id/imageView_fridge" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/contentFragment"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebar"
+        android:layout_toEndOf="@+id/menubar"
+        android:layout_above="@+id/bottom_bar">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/bottombar_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_bottom"
+                android:src="@drawable/bottom_bar"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_home"
+                android:src="@drawable/button_home"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:paddingRight="10dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/bottombar_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_lock"
+                android:src="@drawable/button_lock"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
